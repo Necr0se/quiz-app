@@ -82,6 +82,7 @@ function selectAnswer(e) {
     const isCorrect = selectedButton.dataset.correct === 'true';
     if (isCorrect) {
         score++;
+        updateScore(); // Update the score on the UI
     }
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
@@ -93,6 +94,26 @@ function selectAnswer(e) {
         nextButton.style.display = 'block';
     }
 }
+function updateScore() {
+    const scoreElement = document.getElementById('score');
+    scoreElement.innerText = score;  // Update the score displayed
+}
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    updateScore();  // Reset score on the UI
+    nextButton.innerHTML = 'Next';
+    showQuestion();
+}
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    });
+    if (questions.length > currentQuestionIndex + 1) {
+        nextButton.style.display = 'block';
+    } else {
+        nextButton.innerHTML = 'Restart';
+        nextButton.style.display = 'block';
+    }
 
 function setStatusClass(element, correct) {
     clearStatusClass(element);
