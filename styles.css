@@ -1,0 +1,72 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #874F41;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23efe2ba' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%234056a1' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23e9d49c' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%235c6caf' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23e4c67f' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%237683bc' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23dfb862' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23909bc9' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23dba944' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23aab3d6' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23d79922' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23c5cbe3' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#quiz-container {
+    background-color: #EFE2BA;
+    border-radius: 15px 50px 30px;
+    box-shadow: 0px 13px 38px -18px rgba(71,70,71,1);;
+    padding: 150px;
+    width: 700px;
+    text-align: center;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    background-color: #CFCBE3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: 0056b3;
+}
+.next-btn{
+    display: none;
+    margin-top: 20px;
+}
+#score-card {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+body #b{
+    width: 100%;
+    height: 100%;
+    /* background-color: #defdff; */
+}
+
+body #c{
+    /* background-color: #cecece; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+body #d{
+    /* background-color: #defbc2; */
+}
+
+body #e{
+    /* background-color: #ffeded; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
