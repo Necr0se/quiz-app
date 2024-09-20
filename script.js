@@ -134,8 +134,15 @@ nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
         showQuestion();
     } else {
-        startQuiz();
+        showTotalScore();  // Show the total score at the end of the quiz
     }
 });
+function showTotalScore() {
+    resetState();
+    questionElement.innerHTML = `Quiz complete! Your total score is ${score} out of ${questions.length}.`;
+    nextButton.innerHTML = 'Restart';
+    nextButton.style.display = 'block';
+    nextButton.addEventListener('click', startQuiz); // Reset the quiz when "Restart" is clicked
+}
 
 startQuiz();
